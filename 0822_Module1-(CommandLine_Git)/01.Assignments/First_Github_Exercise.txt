@@ -1,0 +1,19 @@
+GitHub Exercise
+
+This is a simple exercise designed to give you practice using GitHub. Additionally the following questions are meant to stimulate you to think about how innovation arises and propagates. Type your answers and commit them to your repository as outlined in the �Completing Your First Exercise With Git Reading Card� document. Be ready to share these answers <briefly> in the discussion section.
+
+* Bill Gates or Gary Kidall? Thomas Edison or Nicola Tesla? Rosalind Franklin or Watson and Crick? Steve(Jobs or Wozniak)?
+
+Answer?
+
+1. Bill Gates: brought personal computing to the masses and helped create the new agea of industrial revolution
+2. Nicola Tesla: Was a contrarian and had the better idea (AC power): stood up to Thomas Edison
+3. Watson & Crick: The double helix model that helped seed the genetic resolution leading to a better understanding of ourselves
+4. Steve Jobs: Brought the concept of 'beauty' to technology
+
+
+* How might modern data science be disruptive to your industry? 
+
+Answer?
+
+Data Science, unlike Business Intelligence, is a journey into the unknown and can help unlock our potential and free our minds to think clearly. It is an opportunity that is unique in bringing both halves of the brain - right and left together -- and thereby entering a world of wonder and possibility. Rather than focus only on the answer, Data Science compels us to ask the right question..
