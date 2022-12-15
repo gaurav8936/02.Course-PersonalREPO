@@ -1,0 +1,17 @@
+Errors
+
+Test run_scrabble with an input rack of 'AB' (0.0/5.0)
+Test run_scrabble with an input rack of 'ab' (0.0/5.0)
+Test run_scrabble with an input rack of 'zza' (0.0/5.0)
+Test run_scrabble with an input rack of 'ZZZZEE' (0.0/5.0)
+Test run_scrabble with an input rack of 'FIZQLXY' (0.0/5.0)
+Test run_scrabble with an input rack of '?a' (0.0/5.0)
+Test run_scrabble with an input rack of 'abc*' (0.0/5.0)
+Test run_scrabble with an input rack of 'QU*ZZ' (0.0/5.0)
+Test run_scrabble with an input rack of '*?' (0.0/5.0)
+Test run_scrabble with an input rack of 'PEN*?in' (0.0/5.0)
+Test run_scrabble with an input rack of 'PEN*?in' and algorithm speed under 1 minute (0.0/2.0)
+Test run_scrabble with an input rack of 'PEN*?in' and algorithm speed under 45 seconds (0.0/3.0)
+Test run_scrabble with an input rack of 'PEN*?in' and algorithm speed under 30 seconds (0.0/5.0)
+Test if an error message is returned with an input rack with more than 2 wildcards (0.0/2.0)
+Test if the function score_word has a docstring (0.0/1.0)

@@ -1,0 +1,29 @@
+{
+	"champagnes": 
+	[ 
+		{
+			"vintner": "Dom Perignon",
+			"price": 115.67,
+			"vintage": ["1954", "1979", "2000"],
+			"available": false,
+			"delivery": true,
+			"supplier": {
+				"name": "Lars Ingersol",
+				"phone": null,
+				"email": "janedoe@email.com"
+			}
+		},
+		{
+			"vintner": "Veuve Cliquot",
+			"price": 56.00,
+			"brut": true,
+			"available": true,
+			"delivery": true,
+			"supplier": {
+				"name": "vins Benoît",
+				"phone": "033-33-19-32",
+				"email": "vins@benoit.fr"
+			}
+		}
+	]
+}

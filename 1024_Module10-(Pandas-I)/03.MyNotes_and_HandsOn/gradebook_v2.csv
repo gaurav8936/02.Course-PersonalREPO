@@ -1,0 +1,7 @@
+student,midterm,final,letter_grade
+Ben,88.0,90.0,B
+May,78.0,87.0,B
+Sue,92.0,64.0,C
+Blake,56.0,90.0,C
+Amy,79.0,,C
+Steve,,84.0,B

@@ -1,0 +1,14 @@
+{
+	"Alice": {
+    	"phone": "2341",
+    	"addr": "87 Eastlake Court"
+	},
+	"Beth": {
+    	"phone": "9102",
+    	"addr": "563 Hartford Drive"
+	},
+	"Randy": {
+    	"phone": "4563",
+    	"addr": "93 SW 43rd"
+	}
+}

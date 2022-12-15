@@ -1,0 +1,140 @@
+ To program effectively,
+especially as a data scientist, you have to understand
+what types of objects can hold your data, and how
+do those objects behave. So one of the very
+first tasks that you might have to do
+as a data scientist is store some numbers. Of course, a lot of
+data is numerical. The way that you store
+numbers in Python actually depends on what type
+of number we're talking about. So one important type of
+number is the whole numbers. So for example, you
+might have to store how many cats a respondent
+has, or how many sales you've made of your new product. In Python, we use
+a type of object called an int to
+represent whole numbers. Int is short for integer. So a few things to know
+about ints in Python. First of all, they can be
+positive or negative numbers. And in fact, there's
+no limit to how large an int can be in Python. You can make ints be as large
+or as negative as you want. Well, OK, eventually,
+your computer might run out of
+memory if you really try to make the most gigantic
+int that you can possibly imagine. But for practical purposes,
+that's very unlikely to happen. So effectively, ints can be
+as large as they need to be.  The other type of numbers that
+you might want to consider are the non-integer numbers. So for example, you
+might have to represent 1/2 or the square root of 2. In Python, we use
+a type of object called a float to represent
+non-integer numbers. A float is actually
+short for floating point. That's the type of arithmetic. And the point here is
+actually the decimal point. So an important thing
+to think about when it comes to
+non-integer numbers is that a lot of real
+numbers, most real numbers actually take an
+infinite number of digits in order to represent them. You can think about
+pi to be an example. We know that it
+starts with 3.14, but actually it's
+non-terminating. Meaning, it would take an
+infinite number of digits to write down what
+pi is exactly. So in order to do that-- in Python, you
+can't actually store an infinite number of digits. You can't remember an infinite
+amount of information. And so a float has to
+stop after some point. And in Python, a float
+actually records more or less 16 decimal places
+of information. So all of the
+information that you lose after the 16
+decimal places, that's what we call
+rounding error. And a lot of numbers
+in Python are actually stored with at least some
+amount of rounding error. So here are some examples. If you try to
+store pi in Python, you'll have rounding error. If you try to store
+the square root of 2, you'll have rounding error. Here's an interesting one. If you try to store
+1/10, you'll actually have rounding error in Python. Now, that last one
+might surprise you. I'm going to explain why that
+happens in just a moment. And one important
+thing to understand is that when you're
+storing numbers in Python, there's some level
+on your machine where they have to
+be stored in binary. They're stored actually as 0's
+and 1's, because at a low level of computer hardware, everything
+in your computer has to somehow be encoded as bits
+as 0's and 1's. And so for a floating
+point number in particular, the number is going
+to be stored in what we call binary notation. Here's an example of a
+number stored in binary. You can see that it only has 0's
+and 1's in its representation. So normally, you and I are
+used to working in base 10. So when you're
+working in base 10, we're used to
+thinking about having one location of the
+number represent the 1's a different location
+represent the 10's and so on. Binary is simple but
+binary uses powers of 2 instead of powers of 10. So when we're working in binary,
+the first decimal location stores the 1's. That's exactly the same as
+what we have in base 10. The second location
+is different. Instead of storing the 10's,
+this stores the number of 2's. And then if we kept
+going to the left, we'd have the number
+of 4's and so on. What about in the
+other direction? If you think about the first
+location after the decimal point, this actually
+stores the number of 1/2's. And if we go one
+location beyond that, we have the number of 1/4's. So this, I mentioned this is
+a number in binary notation. So how would you translate this
+back to our familiar base 10 notation? Well, we have to sum up these
+2's and the 1's and the 1/2's and so forth. So let's go ahead and try that. So you can see here,
+we'll start with the 2's. So we have one of those. So we'll multiply 1 by 2.  What about the next place? We have the 1's
+location, and you can see we actually have 0, 1. So. Multiply 0 times 1. OK, next, we're in
+the 1/2's location. And again, we have 0 though. So I'm going to
+multiply 0 by 1/2. Finally, we have the 1/4's,
+and we have one of those. So I'm going to
+multiply 1 by a 1/4. So we can sum this up. We have a 2 and we have a 1/4. So the total here is 2 and 1/4. So this number in binary
+is the familiar 2 and 1/4 that we know from
+base 10 notation. How do we go the other way? How do we take a
+number in base 10 and convert it over to binary? Well, let me give
+you a quick example. Here's a number in base
+10, 3.5 in the base 10 just as we're familiar with it. So in order to convert
+that into binary, the first thing I
+need to do is figure out which location
+in the decimal point is the biggest one that we need. So I'm going to put
+down a decimal point. Remember that the
+first location is 1's. And 1 is definitely
+smaller than 3.5. So I'm going to keep
+looking to the left. I'm going to look at
+the next location. This location is the 2's. 2 is still less than 3.5. If I was to go one more location
+to the left, I would have 4's. And a 4 is already too big. 4 is already bigger than 3.5. So that means I don't
+need that location. And so I'm going to
+erase that last one, and I'm just going to
+use the 2's location. And I'm going to take
+1, 2 and put that in. So now so far what I've done
+is I've just inserted 1, 2. And maybe what I want to do
+is delete that from the 3.5 to see what I have left. So I've deleted that,
+I have 1.5 left. Now, we'll continue the process. I move one location to the right
+and I take a look at the 1's. And in this case,
+1 is less than 1.5. So I do want to take
+at least one of those. Well, I can only
+take one at the max. And so I do take
+a 1 in this case. So I'll put a 1 down there. And you can see now
+I can take 1 away and I'm left with a 1 and 1/2. I move one location over to the
+right, 1/2 is exactly 1/2 half. So I put in the 1 and I'm done. So 3.5 in base 10 is represented
+as one 11.1 in binary. So let's get back
+to that mystery that we saw earlier when we
+talked about rounding error. It turns out that if you
+start with the number 1/10, 1/10 in base 10. You try to follow that process
+and convert it over to binary, and it turns out that 1/10
+is written like this 1.000. It keeps going actually forever. So this may surprise you, right? The number 1/10 even though it
+looks really nice and compact in base 10, when you
+convert it to binary, it's a non-terminating decimal. It's one that goes on forever. And what that means is that you
+cannot store this in a computer without some amount
+of rounding error. And so rounding
+error can pop up even when you're not expecting it. There's one important
+lesson from this, which is that because
+we have rounding error, any time a computer
+performs computation, you actually have to be careful. A lot of times you might
+take two floats in Python and try to see whether
+they're equal to each other. But checking for equality
+can be dangerous, because those two
+floats can be computed with some amount
+of rounding error. And so they might be
+not equal to each other even when you're expecting
+them to be equal. So it's possible to
+run into some trouble. So just keep this
+lesson in mind. 

@@ -1,0 +1,10 @@
+[
+    {
+        "book": {
+            "author": "Balzac",
+            "type": "pdf",
+            "title": "Les amis",
+            "pub_year": 1888
+        }
+    }
+]
